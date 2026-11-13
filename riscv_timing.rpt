@@ -1,0 +1,124 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : msrv32_top
+Version: T-2022.03-SP4
+Date   : Wed Jul 22 17:11:06 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p6v125c   Library: saed14rvt_ss0p6v125c
+Wire Load Model Mode: top
+
+  Startpoint: REG2/alu_src_reg_out_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: REG1/pc_out_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  msrv32_top         8000                  saed14rvt_ss0p6v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  REG2/alu_src_reg_out_reg/CK (SAEDRVT14_FDP_V2LP_0P5)
+                                                          0.00 #     0.00 r
+  REG2/alu_src_reg_out_reg/Q (SAEDRVT14_FDP_V2LP_0P5)     0.35       0.35 r
+  REG2/alu_src_reg_out (msrv32_reg_block_2)               0.00       0.35 r
+  WBMUX/alu_source_reg_in (msrv32_wb_mux_sel_unit)        0.00       0.35 r
+  WBMUX/U269/X (SAEDRVT14_MUX2_U_0P5)                     0.12       0.47 f
+  WBMUX/alu_2nd_src_mux_out[0] (msrv32_wb_mux_sel_unit)
+                                                          0.00       0.47 f
+  ALU/op_2_in[0] (msrv32_alu)                             0.00       0.47 f
+  ALU/U457/X (SAEDRVT14_AN2_MM_0P5)                       0.04       0.51 f
+  ALU/U458/X (SAEDRVT14_INV_0P75)                         0.09       0.60 r
+  ALU/U459/X (SAEDRVT14_NR2_1)                            0.06       0.66 f
+  ALU/U462/X (SAEDRVT14_OAI21_0P5)                        0.06       0.72 r
+  ALU/U465/X (SAEDRVT14_ND3B_0P5)                         0.06       0.78 f
+  ALU/U467/X (SAEDRVT14_NR2_1)                            0.02       0.80 r
+  ALU/U477/X (SAEDRVT14_OAI211_0P5)                       0.05       0.85 f
+  ALU/U478/X (SAEDRVT14_OAI21_0P5)                        0.02       0.87 r
+  ALU/U596/X (SAEDRVT14_OAI21_0P5)                        0.05       0.92 f
+  ALU/U598/X (SAEDRVT14_OAI21_0P5)                        0.04       0.96 r
+  ALU/U671/X (SAEDRVT14_NR2_1)                            0.04       1.00 f
+  ALU/U680/X (SAEDRVT14_NR2_1)                            0.02       1.02 r
+  ALU/U729/X (SAEDRVT14_OAI21_0P5)                        0.04       1.06 f
+  ALU/U730/X (SAEDRVT14_ND2_CDC_1)                        0.03       1.09 r
+  ALU/U735/X (SAEDRVT14_AO2BB2_V1_0P5)                    0.05       1.14 r
+  ALU/U740/X (SAEDRVT14_OAI21_0P5)                        0.02       1.17 f
+  ALU/U749/X (SAEDRVT14_OAI21_0P5)                        0.03       1.19 r
+  ALU/U756/X (SAEDRVT14_OAI21_0P5)                        0.05       1.24 f
+  ALU/U762/X (SAEDRVT14_OAI21_0P5)                        0.03       1.27 r
+  ALU/U764/X (SAEDRVT14_OAI21_0P5)                        0.05       1.32 f
+  ALU/U839/X (SAEDRVT14_OAI21_0P5)                        0.03       1.34 r
+  ALU/U894/X (SAEDRVT14_OAI21_0P5)                        0.05       1.39 f
+  ALU/U901/X (SAEDRVT14_OAI21_0P5)                        0.03       1.42 r
+  ALU/U903/X (SAEDRVT14_OAI21_0P5)                        0.05       1.47 f
+  ALU/U905/X (SAEDRVT14_OA21_1)                           0.04       1.51 f
+  ALU/U906/X (SAEDRVT14_NR2_1)                            0.02       1.53 r
+  ALU/U365/X (SAEDRVT14_OA2BB2_V1_0P5)                    0.05       1.58 r
+  ALU/U920/X (SAEDRVT14_ND2_CDC_1)                        0.03       1.61 f
+  ALU/U921/X (SAEDRVT14_OAI21_0P5)                        0.09       1.70 r
+  ALU/U962/X (SAEDRVT14_OAI21_0P5)                        0.05       1.74 f
+  ALU/U1443/X (SAEDRVT14_OAI21_0P5)                       0.03       1.77 r
+  ALU/U1475/X (SAEDRVT14_OAI21_0P5)                       0.05       1.82 f
+  ALU/U1506/X (SAEDRVT14_OAI21_0P5)                       0.03       1.85 r
+  ALU/U1608/X (SAEDRVT14_ND2_CDC_1)                       0.03       1.88 f
+  ALU/U1609/X (SAEDRVT14_AO2BB2_V1_0P5)                   0.08       1.96 f
+  ALU/U1611/X (SAEDRVT14_OAI21_0P5)                       0.03       1.99 r
+  ALU/U1613/X (SAEDRVT14_OAI21_0P5)                       0.05       2.04 f
+  ALU/U1621/X (SAEDRVT14_EN2_0P5)                         0.04       2.08 f
+  ALU/U1622/X (SAEDRVT14_AN2B_MM_1)                       0.02       2.10 f
+  ALU/U1623/X (SAEDRVT14_OAI21_0P5)                       0.02       2.12 r
+  ALU/U1637/X (SAEDRVT14_ND2_CDC_1)                       0.04       2.16 f
+  ALU/result_out[30] (msrv32_alu)                         0.00       2.16 f
+  WBMUX/alu_result_in[30] (msrv32_wb_mux_sel_unit)        0.00       2.16 f
+  WBMUX/U285/X (SAEDRVT14_AO2BB2_V1_0P5)                  0.06       2.21 f
+  WBMUX/U290/X (SAEDRVT14_ND3B_0P5)                       0.09       2.31 f
+  WBMUX/wb_mux_out[30] (msrv32_wb_mux_sel_unit)           0.00       2.31 f
+  IRF/rd_in[30] (msrv32_integer_file)                     0.00       2.31 f
+  IRF/U4094/X (SAEDRVT14_ND2_CDC_1)                       0.05       2.35 r
+  IRF/U4100/X (SAEDRVT14_AN3_0P5)                         0.04       2.39 r
+  IRF/U4101/X (SAEDRVT14_ND4_0P5)                         0.07       2.46 f
+  IRF/rs_1_out[30] (msrv32_integer_file)                  0.00       2.46 f
+  BU/rs1_in[30] (msrv32_bu)                               0.00       2.46 f
+  BU/U113/X (SAEDRVT14_AN2B_MM_1)                         0.03       2.49 f
+  BU/U114/X (SAEDRVT14_NR2_1)                             0.02       2.50 r
+  BU/U115/X (SAEDRVT14_ND3B_0P5)                          0.05       2.55 f
+  BU/U178/X (SAEDRVT14_NR4_0P75)                          0.05       2.60 r
+  BU/U182/X (SAEDRVT14_OA21_1)                            0.03       2.63 r
+  BU/U183/X (SAEDRVT14_NR2_1)                             0.01       2.64 f
+  BU/U3/X (SAEDRVT14_OA2BB2_V1_0P5)                       0.03       2.67 f
+  BU/U186/X (SAEDRVT14_OAI21_0P5)                         0.02       2.69 r
+  BU/branch_taken_out (msrv32_bu)                         0.00       2.69 r
+  PC/branch_taken_in (msrv32_pc)                          0.00       2.69 r
+  PC/U4/X (SAEDRVT14_ND2_MM_1)                            0.09       2.78 f
+  PC/U102/X (SAEDRVT14_OA211_1)                           0.12       2.90 f
+  PC/U18/X (SAEDRVT14_ND2_CDC_1)                          0.02       2.92 r
+  PC/pc_mux_out[4] (msrv32_pc)                            0.00       2.92 r
+  REG1/pc_mux_in[4] (msrv32_reg_block_1)                  0.00       2.92 r
+  REG1/U23/X (SAEDRVT14_AN2_MM_0P5)                       0.02       2.94 r
+  REG1/pc_out_reg[4]/D (SAEDRVT14_FDP_V2LP_0P5)           0.00       2.95 r
+  data arrival time                                                  2.95
+
+  clock clk (rise edge)                                   3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  REG1/pc_out_reg[4]/CK (SAEDRVT14_FDP_V2LP_0P5)          0.00       3.00 r
+  library setup time                                     -0.02       2.98
+  data required time                                                 2.98
+  --------------------------------------------------------------------------
+  data required time                                                 2.98
+  data arrival time                                                 -2.95
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+1
