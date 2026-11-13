@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : msrv32_top
+Version: T-2022.03-SP4
+Date   : Wed Jul 22 17:11:06 2026
+****************************************
+
+Library(s) Used:
+
+    saed14lvt_ss0p6v125c (File: /home1/14_nmts/14_nmts/stdcell_lvt/db_ccs/saed14lvt_ss0p6v125c.db)
+    saed14rvt_ss0p6v125c (File: /home1/14_nmts/14_nmts/stdcell_rvt/db_ccs/saed14rvt_ss0p6v125c.db)
+
+Number of ports:                         4184
+Number of nets:                         15690
+Number of cells:                        11541
+Number of combinational cells:           9809
+Number of sequential cells:              1705
+Number of macros/black boxes:               0
+Number of buf/inv:                       2018
+Number of references:                      17
+
+Combinational area:               3030.211200
+Buf/Inv area:                      368.431193
+Noncombinational area:            1691.418027
+Macro/Black Box area:                0.000000
+Net Interconnect area:            9284.383542
+
+Total cell area:                  4721.629227
+Total area:                      14006.012769
+1
